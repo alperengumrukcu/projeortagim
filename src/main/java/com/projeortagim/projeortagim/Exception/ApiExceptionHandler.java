@@ -17,11 +17,11 @@ public class ApiExceptionHandler {
         response.setData(null);
         return new ResponseEntity<>(response,HttpStatus.BAD_REQUEST);
     }
-    @ExceptionHandler(value = Exception.class)
-    public ResponseEntity<BaseResponse<?>> exception(){
+   /* @ExceptionHandler(value = Exception.class)
+   public ResponseEntity<BaseResponse<?>> exception(){
         BaseResponse response = new BaseResponse();
         response.setMessages("Bilinmeyen bir hata oluştu...");
         response.setSuccess(false);
         response.setData(null);
         return new ResponseEntity<>(response,HttpStatus.INTERNAL_SERVER_ERROR);
-    }}
+    }*/}
